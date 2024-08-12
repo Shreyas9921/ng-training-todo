@@ -1,0 +1,18 @@
+<!--<p>task-list works!</p>-->
+<!-- src/app/components/task-list/task-list.component.html
+<div *ngFor="let task of tasks">
+  <h3>{{ task.title }}</h3>
+  <p>{{ task.description }}</p>
+  <button (click)="deleteTask(task._id)">Delete</button>
+  <button [routerLink]="['/edit', task._id]">Edit</button>
+  this.router.navigate(['/edit', task._id]);
+
+</div>
+-->
+
+<div *ngFor="let task of tasks">
+  <h3>{{ task.title }}</h3>
+  <p>{{ task.description }}</p>
+  <button (click)="deleteTask(task._id)">Delete</button>
+  <button (click)="editTask(task._id)">Edit</button>
+</div>
